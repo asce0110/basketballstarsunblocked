@@ -42,7 +42,6 @@ export default function Home() {
               <SocialShare 
                 url="https://basketballstarsunblocked.org"
                 title="Play Basketball Stars Unblocked - The Best Free Online Basketball Game!"
-                description="Join me in playing Basketball Stars Unblocked! Fast-paced basketball action with amazing graphics and multiplayer support. Play now, no download required!"
               />
             </div>
           </div>
@@ -83,7 +82,7 @@ export default function Home() {
           <div className="text-4xl mb-4">🏀</div>
           <h3 className="text-xl font-bold text-gray-900 mb-3">Coming Soon!</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            We're working hard to bring you more exciting basketball games. Check back soon for new additions to our collection!
+            We&apos;re working hard to bring you more exciting basketball games. Check back soon for new additions to our collection!
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
             <div className="bg-blue-50 p-4 rounded-lg">

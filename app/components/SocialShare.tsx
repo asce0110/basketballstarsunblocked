@@ -5,10 +5,9 @@ import { FaFacebookF, FaTwitter, FaWhatsapp, FaRedditAlien } from 'react-icons/f
 interface SocialShareProps {
   url: string;
   title: string;
-  description?: string;
 }
 
-const SocialShare = ({ url, title, description = '' }: SocialShareProps) => {
+const SocialShare = ({ url, title }: SocialShareProps) => {
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
 
