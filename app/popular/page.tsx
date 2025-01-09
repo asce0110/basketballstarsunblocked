@@ -1,8 +1,8 @@
 import { getPopularGames } from '../data/games';
 import GameCard from '../components/GameCard';
 
-export default function PopularGames() {
-  const games = getPopularGames();
+export default async function PopularGames() {
+  const games = await getPopularGames();
 
   return (
     <div className="space-y-6">

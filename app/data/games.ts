@@ -80,15 +80,15 @@ export const games: Game[] = [
   }
 ];
 
-export function getGameBySlug(slug: string): Game | undefined {
+export async function getGameBySlug(slug: string): Promise<Game | undefined> {
   return games.find(game => game.slug === slug);
 }
 
-export function getPopularGames(): Game[] {
+export async function getPopularGames(): Promise<Game[]> {
   return games.filter(game => game.rating && game.rating >= 4.5);
 }
 
-export function getNewGames(): Game[] {
+export async function getNewGames(): Promise<Game[]> {
   return games.filter(game => game.releaseDate).sort((a, b) => {
     if (a.releaseDate && b.releaseDate) {
       return new Date(b.releaseDate).getTime() - new Date(a.releaseDate).getTime();

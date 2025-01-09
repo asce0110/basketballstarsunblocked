@@ -2,11 +2,14 @@ import { getGameBySlug } from '@/app/data/games';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
-export async function generateMetadata({
-  params,
-}: {
+type PageProps = {
   params: { slug: string };
-}): Promise<Metadata> {
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export async function generateMetadata(
+  { params }: PageProps,
+): Promise<Metadata> {
   const game = getGameBySlug(params.slug);
 
   if (!game) {
@@ -22,12 +25,8 @@ export async function generateMetadata({
   };
 }
 
-export default function Page({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const game = getGameBySlug(params.slug);
+export default async function Page(props: PageProps) {
+  const game = await getGameBySlug(props.params.slug);
 
   if (!game) {
     notFound();

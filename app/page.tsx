@@ -3,8 +3,8 @@ import { getPopularGames } from './data/games';
 import Link from 'next/link';
 import SocialShare from './components/SocialShare';
 
-export default function Home() {
-  const popularGames = getPopularGames();
+export default async function Home() {
+  const popularGames = await getPopularGames();
 
   return (
     <div className="space-y-8">
