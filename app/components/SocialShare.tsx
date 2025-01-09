@@ -11,7 +11,6 @@ interface SocialShareProps {
 const SocialShare = ({ url, title, description = '' }: SocialShareProps) => {
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
-  const encodedDescription = encodeURIComponent(description);
 
   const shareLinks = [
     {

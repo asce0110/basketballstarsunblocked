@@ -12,7 +12,7 @@ export default function NewGamesPage() {
         <div className="text-6xl mb-4">🏀</div>
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">New Games Coming Soon!</h1>
         <p className="text-lg text-gray-600">
-          We're working hard to bring you more exciting basketball games. Check back soon for new additions to our collection!
+          We&apos;re working hard to bring you more exciting basketball games. Check back soon for new additions to our collection!
         </p>
         <div className="bg-blue-50 p-6 rounded-lg mt-8">
           <h2 className="text-xl font-bold text-blue-900 mb-4">What to Expect</h2>

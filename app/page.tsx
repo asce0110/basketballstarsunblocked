@@ -50,10 +50,10 @@ export default function Home() {
         <div className="bg-gray-50 p-4 rounded-lg">
           <h3 className="font-bold mb-2">About Basketball Stars Unblocked</h3>
           <p className="text-gray-600 text-sm leading-relaxed mb-3">
-            Basketball Stars unblocked is the premier online basketball game that lets you showcase your skills on the virtual court. Whether you're practicing your shots in single-player mode or competing against friends in multiplayer matches, this unblocked version ensures you can play without any network restrictions.
+            Basketball Stars unblocked is the premier online basketball game that lets you showcase your skills on the virtual court. Whether you&apos;re practicing your shots in single-player mode or competing against friends in multiplayer matches, this unblocked version ensures you can play without any network restrictions.
           </p>
           <p className="text-gray-600 text-sm leading-relaxed">
-            With Basketball Stars unblocked games, you'll experience realistic basketball physics, intuitive controls, and exciting game modes that capture the true essence of basketball. Perfect your shooting technique, master defensive moves, and become the ultimate basketball star!
+            With Basketball Stars unblocked games, you&apos;ll experience realistic basketball physics, intuitive controls, and exciting game modes that capture the true essence of basketball. Perfect your shooting technique, master defensive moves, and become the ultimate basketball star!
           </p>
         </div>
       </section>
