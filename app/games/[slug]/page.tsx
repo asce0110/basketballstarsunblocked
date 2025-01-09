@@ -2,9 +2,10 @@ import { getGameBySlug } from '@/app/data/games';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
-interface Props {
+type Props = {
   params: { slug: string };
-}
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 export async function generateMetadata(
   { params }: Props,
@@ -77,7 +78,7 @@ export default async function Page({ params }: Props) {
             <div className="bg-white rounded-lg p-6 shadow-md">
               <h2 className="text-2xl font-bold mb-4">Features</h2>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
-                {game.features.map((feature, index) => (
+                {game.features.map((feature: string, index: number) => (
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
@@ -113,7 +114,7 @@ export default async function Page({ params }: Props) {
             <div className="bg-white rounded-lg p-6 shadow-md">
               <h2 className="text-xl font-bold mb-4">Game Controls</h2>
               <div className="space-y-3">
-                {game.controls.map((control, index) => (
+                {game.controls.map((control: { key: string; action: string }, index: number) => (
                   <div key={index} className="flex justify-between items-center">
                     <span className="font-medium bg-gray-100 px-2 py-1 rounded">
                       {control.key}
@@ -132,7 +133,7 @@ export default async function Page({ params }: Props) {
         <div className="bg-white rounded-lg p-6 shadow-md">
           <h2 className="text-2xl font-bold mb-4">Screenshots</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {game.screenshots.map((screenshot, index) => (
+            {game.screenshots.map((screenshot: string, index: number) => (
               <div key={index} className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
                 <div className="w-full h-full flex items-center justify-center text-gray-400">
                   Screenshot {index + 1}
