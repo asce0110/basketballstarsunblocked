@@ -98,10 +98,10 @@ export async function getNewGames(): Promise<Game[]> {
 }
 
 // 添加一个函数来生成新游戏的 slug
-export function createGameSlug(title: string): string {
+export async function createGameSlug(title: string): Promise<string> {
   const slug = generateSlug(title);
   // 检查 slug 是否已存在
-  const existingGame = getGameBySlug(slug);
+  const existingGame = await getGameBySlug(slug);
   if (existingGame) {
     // 如果存在，添加一个随机数
     return `${slug}-${Math.floor(Math.random() * 1000)}`;
