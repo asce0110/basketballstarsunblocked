@@ -1,7 +1,31 @@
 import { getGameBySlug } from '@/app/data/games';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 
-export default function GamePage({ params }: { params: { slug: string } }) {
+interface Props {
+  params: {
+    slug: string;
+  };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const game = getGameBySlug(params.slug);
+
+  if (!game) {
+    return {
+      title: 'Game Not Found - Basketball Stars Unblocked',
+      description: 'The requested game could not be found. Try our other basketball games!'
+    };
+  }
+
+  return {
+    title: `${game.title} - Basketball Stars Unblocked Games`,
+    description: game.longDescription || game.description,
+  };
+}
+
+export default async function GamePage({ params, searchParams }: Props) {
   const game = getGameBySlug(params.slug);
 
   if (!game) {
