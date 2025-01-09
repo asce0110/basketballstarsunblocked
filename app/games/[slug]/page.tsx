@@ -6,7 +6,6 @@ interface Props {
   params: {
     slug: string;
   };
-  searchParams: { [key: string]: string | string[] | undefined };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -25,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function GamePage({ params, searchParams }: Props) {
+export default async function GamePage({ params }: Props) {
   const game = getGameBySlug(params.slug);
 
   if (!game) {
