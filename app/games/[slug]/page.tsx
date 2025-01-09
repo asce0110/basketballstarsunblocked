@@ -2,13 +2,18 @@ import { getGameBySlug } from '@/app/data/games';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
-interface Props {
-  params: {
-    slug: string;
-  };
+type Props = {
+  params: { slug: string }
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+type GenerateMetadataProps = {
+  params: { slug: string }
+}
+
+export async function generateMetadata(
+  { params }: GenerateMetadataProps
+): Promise<Metadata> {
   const game = getGameBySlug(params.slug);
 
   if (!game) {
@@ -24,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function GamePage({ params }: Props) {
+export default function GamePage({ params }: Props) {
   const game = getGameBySlug(params.slug);
 
   if (!game) {
