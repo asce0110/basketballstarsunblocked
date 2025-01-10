@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://basketballstarsunblocked.org"
   },
   icons: {
-    icon: '/basketball-icon.ico',
-    shortcut: '/basketball-icon.ico',
-    apple: '/basketball-icon.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
   manifest: '/site.webmanifest',
   appleWebApp: {
