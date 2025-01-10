@@ -1,6 +1,7 @@
 import { getGameBySlug } from '@/app/data/games';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 interface PageProps {
   params: {
@@ -52,6 +53,14 @@ export default async function Page({ params }: PageProps) {
             {game.category}
           </span>
         )}
+        <div className="mt-4 relative aspect-video w-full max-w-2xl bg-gray-100 rounded-lg overflow-hidden">
+          <Image
+            src={game.image}
+            alt={game.title}
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
 
       {/* Game Content */}
