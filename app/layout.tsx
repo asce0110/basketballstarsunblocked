@@ -19,20 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://basketballstarsunblocked.org"
   },
   icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-      { url: '/favicon.svg', type: 'image/svg+xml' }
-    ],
-    apple: [
-      { url: '/apple-touch-icon.png' }
-    ],
-    other: [
-      {
-        rel: 'mask-icon',
-        url: '/favicon.svg',
-      }
-    ]
+    icon: '/basketball-icon.ico',
+    shortcut: '/basketball-icon.ico',
+    apple: '/basketball-icon.png',
   },
   manifest: '/site.webmanifest',
   appleWebApp: {
