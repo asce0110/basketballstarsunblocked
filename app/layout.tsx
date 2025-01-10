@@ -76,7 +76,7 @@ export default function RootLayout({
                 </Link>
               </div>
               <p className="text-center text-gray-500 text-sm">
-                © 2024 Basketball Stars Unblocked Games. All rights reserved.
+                © 2025 Basketball Stars Unblocked Games. All rights reserved.
               </p>
             </div>
           </div>

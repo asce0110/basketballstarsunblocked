@@ -12,7 +12,7 @@ export default function PrivacyPage() {
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
         <div className="prose max-w-none">
           <p className="text-gray-600 mb-6">
-            Last updated: January 15, 2024
+            Last updated: January 10, 2025
           </p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4">Introduction</h2>
