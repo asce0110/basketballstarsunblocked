@@ -11,14 +11,6 @@ export default function BasketballStarsPage() {
     <div className="space-y-6">
       <section className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
         <h1 className="text-2xl sm:text-3xl font-bold mb-4">Basketball Stars Unblocked Games</h1>
-        <div className="relative aspect-video w-full max-w-2xl bg-gray-100 rounded-lg overflow-hidden mb-4">
-          <Image
-            src="https://s.basketballstarsunblocked.org/basketball-stars1-m240x240.jpg"
-            alt="Basketball Stars"
-            fill
-            className="object-cover"
-          />
-        </div>
         <div className="aspect-[16/9] w-full bg-gray-100 rounded-lg overflow-hidden mb-4">
           <iframe
             src="https://basketball-stars.io/1.embed"
