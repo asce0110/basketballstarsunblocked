@@ -18,14 +18,14 @@ export default function GameCard({
   compact = false 
 }: GameCardProps) {
   return (
-    <div className={`bg-white rounded-lg shadow hover:shadow-lg transition-shadow ${compact ? 'p-2' : 'p-3'}`}>
-      <Link href={`/games/${game.slug}`}>
-        <div className={`relative aspect-video bg-gray-100 rounded-lg overflow-hidden mb-2 ${compact ? 'mb-1' : 'mb-2'}`}>
+    <div className={`bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 ${compact ? 'p-2' : 'p-3'}`}>
+      <Link href={`/games/${game.slug}`} className="block">
+        <div className={`relative aspect-video bg-gray-100 rounded-lg overflow-hidden mb-2 ${compact ? 'mb-1' : 'mb-2'} group`}>
           <Image
             src={game.image}
             alt={game.title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-300 group-hover:scale-110"
           />
         </div>
         <h3 className={`font-bold text-gray-900 line-clamp-1 ${compact ? 'text-sm' : 'text-base'}`}>{game.title}</h3>
