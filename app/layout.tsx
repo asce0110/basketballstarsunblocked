@@ -66,9 +66,19 @@ export default function RootLayout({
         </main>
         <footer className="bg-white border-t mt-auto">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p className="text-center text-gray-500 text-sm">
-              © 2024 Basketball Stars Unblocked Games. All rights reserved.
-            </p>
+            <div className="flex flex-col items-center space-y-4">
+              <div className="flex space-x-6 text-sm text-gray-500">
+                <Link href="/privacy" className="hover:text-blue-600 transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link href="/terms" className="hover:text-blue-600 transition-colors">
+                  Terms of Service
+                </Link>
+              </div>
+              <p className="text-center text-gray-500 text-sm">
+                © 2024 Basketball Stars Unblocked Games. All rights reserved.
+              </p>
+            </div>
           </div>
         </footer>
       </body>
