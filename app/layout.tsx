@@ -1,9 +1,16 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: '#ffffff'
+};
 
 export const metadata: Metadata = {
   title: "Basketball Stars Unblocked - Free Online Basketball Games",
@@ -32,13 +39,7 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: 'default',
     title: 'Basketball Stars Unblocked'
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1
-  },
-  themeColor: '#ffffff'
+  }
 };
 
 export default function RootLayout({
