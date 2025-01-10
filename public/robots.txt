@@ -1,0 +1,6 @@
+# https://basketballstarsunblocked.org/
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://basketballstarsunblocked.org/sitemap.xml 
