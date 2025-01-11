@@ -75,6 +75,12 @@ export default function RootLayout({
                   Terms of Service
                 </Link>
               </div>
+              <div className="flex space-x-6 text-sm text-gray-500">
+                <span>Friends:</span>
+                <a href="https://dokeyai.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                  DokeyAI
+                </a>
+              </div>
               <p className="text-center text-gray-500 text-sm">
                 © 2025 Basketball Stars Unblocked Games. All rights reserved.
               </p>
