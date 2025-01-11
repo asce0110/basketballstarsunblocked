@@ -80,6 +80,9 @@ export default function RootLayout({
                 <a href="https://dokeyai.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
                   DokeyAI
                 </a>
+                <a href="https://sprunked.dev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+                  Sprunked
+                </a>
               </div>
               <p className="text-center text-gray-500 text-sm">
                 © 2025 Basketball Stars Unblocked Games. All rights reserved.
