@@ -1,0 +1,2 @@
+# Redirect Netlify subdomain to main domain
+https://basketballstarsunblocked.netlify.app/* https://basketballstarsunblocked.org/:splat 301! 
