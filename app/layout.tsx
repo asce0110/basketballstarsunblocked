@@ -13,8 +13,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Basketball Stars Unblocked - Free Online Basketball Games",
-  description: "Play Basketball Stars unblocked games online for free. Experience fast-paced basketball action with multiplayer support, no downloads required. Play anywhere, anytime!",
+  title: {
+    template: '%s | Basketball Stars Unblocked',
+    default: 'Basketball Stars Unblocked - Free Online Basketball Games',
+  },
+  description: 'Play Basketball Stars unblocked online for free! Experience the best multiplayer basketball game with stunning graphics and smooth controls.',
   alternates: {
     canonical: "https://basketballstarsunblocked.org"
   },
@@ -38,6 +41,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3866499040124944" crossOrigin="anonymous"></script>
+      </head>
       <body className={`${inter.className} bg-gray-100`}>
         <header className="bg-white shadow-sm sticky top-0 z-50">
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
