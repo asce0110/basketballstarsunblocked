@@ -56,6 +56,30 @@ export const games: Game[] = [
     ]
   },
   {
+    title: "Basket Bros",
+    slug: "basket-bros",
+    description: "Experience intense 2D basketball action!",
+    longDescription: "Basket Bros brings a unique twist to basketball gaming with its 2D style and intense gameplay. Challenge your friends in local multiplayer matches or take on players worldwide in online mode. With simple controls but deep gameplay mechanics, every match is an exciting battle for basketball supremacy.",
+    image: "/games/basket-bros.jpg",
+    url: "https://basketball-stars.io/basket-bros.embed",
+    rating: 4.8,
+    players: "750K+",
+    category: "Multiplayer",
+    features: [
+      "2D basketball action",
+      "Online and local multiplayer",
+      "Quick matches",
+      "Unique power-ups",
+      "Various game modes"
+    ],
+    controls: [
+      { key: "WASD", action: "Move player" },
+      { key: "Space", action: "Jump/Shoot" },
+      { key: "E", action: "Block" },
+      { key: "Q", action: "Special move" }
+    ]
+  },
+  {
     title: "Basketball IO",
     slug: "basketball-io",
     description: "Multiplayer basketball fun!",
