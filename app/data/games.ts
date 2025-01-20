@@ -32,6 +32,29 @@ export const games: Game[] = [
     ]
   },
   {
+    title: "Slope 3",
+    slug: "slope-3",
+    description: "Play Slope 3 - The ultimate 3D speed run game!",
+    longDescription: "Slope 3 is an intense 3D running game where you control a ball rolling down a steep slope. Test your reflexes as you dodge obstacles, collect points, and try to reach the highest score. With its stunning graphics and addictive gameplay, Slope 3 offers an adrenaline-pumping experience that will keep you coming back for more.",
+    image: "https://s.basketballstarsunblocked.org/slope-3-m240x240.jpg",
+    url: "/api/embed/slope-3.embed",
+    rating: 4.8,
+    players: "500K+",
+    category: "Action",
+    features: [
+      "Fast-paced 3D gameplay",
+      "Increasing difficulty",
+      "Score system",
+      "Multiple levels",
+      "Stunning graphics"
+    ],
+    controls: [
+      { key: "Arrow Keys", action: "Control ball" },
+      { key: "A/D", action: "Move left/right" },
+      { key: "Space", action: "Jump" }
+    ]
+  },
+  {
     title: "Basketball Legends",
     slug: "basketball-legends",
     description: "Compete in epic basketball matches!",
