@@ -13,7 +13,7 @@ export default async function Home() {
         <h1 className="text-2xl sm:text-3xl font-bold mb-4">Basketball Stars Unblocked Games</h1>
         <div className="aspect-[16/9] w-full bg-gray-100 rounded-lg overflow-hidden mb-4">
           <iframe
-            src="/api/embed/basketball-stars.embed"
+            src="https://basketball-stars.io/1.embed"
             className="w-full h-full"
             allowFullScreen
           />
