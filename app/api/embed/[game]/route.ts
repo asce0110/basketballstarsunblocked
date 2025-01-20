@@ -60,39 +60,29 @@ export async function GET(
             transform: translate(-50%, -50%);
             color: white;
             font-family: Arial, sans-serif;
-            display: none;
-          }
-          #game-frame {
-            opacity: 0;
+            z-index: 1;
             transition: opacity 0.3s ease;
           }
-          #game-frame.loaded {
-            opacity: 1;
+          #game-frame {
+            position: relative;
+            z-index: 2;
           }
         </style>
       </head>
       <body>
         <div class="game-container">
-          <div class="loading">Loading...</div>
+          <div id="loading" class="loading">Loading...</div>
           <iframe 
             id="game-frame"
             src="${gameUrl}"
             allowfullscreen="true"
             scrolling="no"
-            onload="this.classList.add('loaded')"
           ></iframe>
         </div>
         <script>
-          window.addEventListener('load', function() {
-            const iframe = document.getElementById('game-frame');
-            const loading = document.querySelector('.loading');
-            
-            loading.style.display = 'block';
-            
-            iframe.addEventListener('load', function() {
-              loading.style.display = 'none';
-            });
-          });
+          document.getElementById('game-frame').onload = function() {
+            document.getElementById('loading').style.display = 'none';
+          };
         </script>
       </body>
     </html>
