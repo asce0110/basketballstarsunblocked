@@ -48,8 +48,8 @@ export default function RootLayout({
         <header className="bg-white shadow-sm sticky top-0 z-50">
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-2xl">🏀</span>
-              <span className="font-bold text-lg">Basketball Stars</span>
+              <span className="text-3xl">🏀</span>
+              <span className="font-bold text-2xl">Basketball Stars</span>
             </Link>
             <div className="flex space-x-6">
               <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
